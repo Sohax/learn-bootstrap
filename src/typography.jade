@@ -1,0 +1,126 @@
+extends _layouts/base
+
+
+block content
+  .container
+    include _modules/link/menu
+    h1 Bootstrap Text/Typography
+    br
+    h1 Small
+      div.row
+      h2
+        | h2 heading >
+        small  > secondary text
+
+      h3
+        | h3 heading >
+        small  > secondary text
+      h4
+        | h4 heading >
+        small  > secondary text
+      h5
+        | h5 heading >
+        small  > secondary text
+      h6
+        | h6 heading >
+        small  > secondary text
+    br
+    h1 Mark
+      div.row
+      h5
+        | Use the mark element to
+        mark highlight
+        |  text.
+      h5
+        | Do not use the mark element to
+        mark nonhighlight
+        |  text, :)
+    br
+    h1 Abbr
+      div.row
+      h5
+        |The
+        abbr(title="World of Warcraft")  WOW
+        |  Release date was in november, 2004.
+      h5
+        |The
+        abbr(title="noob")  woof
+        |  means noob.
+    br
+    h1 Blockquote
+    .blockquote
+      p
+        | For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+      .footer !!! aici nu apare ca si footer ...
+    br
+    h1 DL
+    dl
+      dt Coffee
+      dd - black hot drink
+      dt Milk
+      dd - white cold drink
+    br
+    h1 Code
+    p
+      | The following HTML elements:
+      code span
+      | ,
+      code section
+      | , and
+      code div
+      |  defines a section in a document.
+    br
+    h1 Kbd
+    p
+      | Use
+      kbd ctrl + p
+      |  to open the Print dialog box.
+    br
+    h1 Pre
+    p For multiple lines of code, use the pre element:
+    pre.
+      Text in a pre element
+      is displayed in a fixed-width
+      font, and it preserves
+      both      spaces and
+      line breaks.
+    br
+    h1 Contextual Colors
+    h4 Text colors:
+    p.text-muted This text is muted.
+    p.text-primary This text is important.
+    p.text-success This text indicates success.
+    p.text-info This text represents some information.
+    p.text-warning This text represents a warning.
+    p.text-danger This text represents danger.
+    h4 Background colors:
+    p.bg-muted This text is muted.
+    p.bg-primary This text is important.
+    p.bg-success This text indicates success.
+    p.bg-info This text represents some information.
+    p.bg-warning This text represents a warning.
+    p.bg-danger This text represents danger.
+    br
+    h1 More typo classes:
+    h4 .lead
+    p (Makes a paragraph stand out);
+    h4 .small
+    p (Indicates smaller text (set to 85% of the size of the parent) );
+    h4 .text-left
+    p (Indicates left-aligned text);
+    h4 .text-center
+    p (Indicates center-aligned text);
+    h4 .text-right
+    p (Indicates right-aligned text);
+    h4 .text-justify
+    p (Indicates justified text);
+    h4 .text-nowrap
+    p (Indicates no wrap text);
+    h4 .text-uppercase
+    p (Indicates uppercased text);
+    h4 .pre-scrollable
+    p (Makes a "pre" element scrollable)...
+
+
+
+

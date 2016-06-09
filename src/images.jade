@@ -4,4 +4,41 @@ extends _layouts/base
 block content
   .container
     include _modules/link/menu
-    h1 Bootstrap Images
+    h1
+      |Bootstrap Images
+      small :
+    br
+    h1 Image shapes
+    h4 Rounded corners
+    p The ".img-rounded" class adds rounded corners to an image (IE8 does not support rounded corners):
+    img.img-rounded(src='http://lorempixel.com/image_output/city-q-c-640-480-2.jpg', alt='Cinque Terre', width='304', height='236')
+    br
+    br
+    br
+    h4 Circle
+    p The ".img-circle" class shapes the image to a circle (IE8 does not support rounded corners):
+    img.img-circle(src='http://lorempixel.com/image_output/technics-q-c-800-600-7.jpg', alt='Technics', width='304', height='236')
+    br
+    br
+    br
+    h4 Thumbnail
+    p The ".img-thumbnail" class shapes the image to a thumbnail:
+    img.img-thumbnail(src='http://lorempixel.com/image_output/people-q-g-800-600-7.jpg', alt='People', width='304', height='236')
+    br
+    br
+    br
+    h4 Image Gallery
+    p You can also use Bootstrap's grid system in conjunction with the ".thumbnail" class to create an image gallery:
+    div.row
+      div.col-md-4
+        a.img-thumbnail(href='http://lorempixel.com/image_output/city-q-g-640-480-10.jpg')
+            p Lorempixel.com
+            img(src='http://lorempixel.com/image_output/city-q-g-640-480-10.jpg', alt='Pulpit Rock', style='width:150px;height:150px')
+      .col-md-4
+        a.img-thumbnail(href='http://lorempixel.com/image_output/abstract-q-c-640-480-1.jpg')
+          p Lorempixel.com
+          img(src='http://lorempixel.com/image_output/abstract-q-c-640-480-1.jpg', alt='Pulpit Rock', style='width:150px;height:150px')
+      .col-md-4
+        a.img-thumbnail(href='http://lorempixel.com/image_output/transport-q-c-640-480-7.jpg')
+          p Lorempixel.com
+          img(src='http://lorempixel.com/image_output/transport-q-c-640-480-7.jpg', alt='Pulpit Rock', style='width:150px;height:150px')

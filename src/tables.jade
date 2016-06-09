@@ -4,4 +4,146 @@ extends _layouts/base
 block content
   .container
     include _modules/link/menu
-    h1 Bootstrap Tables
+    h1
+      | Bootstratp Tables
+      small :
+    br
+    h1 Basic table
+    p The ".table" class adds basic styling to a table:
+    table.table
+      thead
+        tr
+          th Firstname
+          th Lastname
+          th Email
+      tbody
+        tr
+          td Flavius
+          td Bohaciuc
+          td flavius@example.com
+        tr
+          td Alin
+          td Savage
+          td alin@example.com
+        tr
+          td July
+          td Dooley
+          td july@example.com
+    br
+    h1 Striped rows
+    p The ".table-striped" class adds zebra-stripes to a table:
+    table.table.table-striped
+      thead
+        tr
+          th Firstname
+          th Lastname
+          th Email
+      tbody
+        tr
+          td Flavius
+          td Bohaciuc
+          td flavius@example.com
+        tr
+          td Alin
+          td Savage
+          td alin@example.com
+        tr
+          td July
+          td Dooley
+          td july@example.com
+    br
+    h1 Bordered Table
+    p The ".table-bordered" class adds borders on all sides of the table and cells:
+    table.table.table-bordered
+      thead
+        tr
+          th Firstname
+          th Lastname
+          th Email
+      tbody
+        tr
+          td Flavius
+          td Bohaciuc
+          td flavius@example.com
+        tr
+          td Alin
+          td Savage
+          td alin@example.com
+        tr
+          td July
+          td Dooley
+          td july@example.com
+    br
+    h1 Hover Rows
+    p The ".table-hover" class enables a hover state on tables rows:
+    table.table.table-hover
+      thead
+        tr
+          th Firstname
+          th Lastname
+          th Email
+      tbody
+        tr
+          td Flavius
+          td Bohaciuc
+          td flavius@example.com
+        tr
+          td Alin
+          td Savage
+          td alin@example.com
+        tr
+          td July
+          td Dooley
+          td july@example.com
+    br
+    h1 Contextual Classes
+    p Contextual classes can be used to color table rows "tr" or table cells "td":
+    table.table
+      thead
+        tr
+          th Firstname
+          th Lastname
+          th Email
+      tbody
+        tr.alert-success
+          td Flavius
+          td Bohaciuc
+          td flavius@example.com
+        tr.alert-danger
+          td Alin
+          td Savage
+          td alin@example.com
+        tr.alert-info
+          td July
+          td Dooley
+          td july@example.com
+    br
+    h1 Responsive Tables
+    p The ".table-responsive" class creates a responsive table. The table will then scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, there is no difference:
+    div.table-responsive
+      table.table
+        thead
+          tr
+            th #
+            th Firstname
+            th Lastname
+            th Age
+            th City
+            th Country
+        tbody
+          tr
+            td 1
+            td Flavius
+            td Bohaciuc
+            td 24
+            td London
+            td UK
+          tr
+            td 2
+            td Anna
+            td Pitt
+            td 35
+            td New York
+            td USA
+
+

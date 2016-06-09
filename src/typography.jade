@@ -4,7 +4,9 @@ extends _layouts/base
 block content
   .container
     include _modules/link/menu
-    h1 Bootstrap Text/Typography
+    h1
+      |Bootstrap Text/Typography
+      small :
     br
     h1 Small
       div.row
@@ -37,15 +39,15 @@ block content
         |  text, :)
     br
     h1 Abbr
-      div.row
-      h5
-        |The
-        abbr(title="World of Warcraft")  WOW
-        |  Release date was in november, 2004.
-      h5
-        |The
-        abbr(title="noob")  woof
-        |  means noob.
+    div.row
+    h5
+      | The#{" "}
+      abbr(title="World of Warcraft") WOW#{" "}
+      | Release date was in november, 2004.
+    h5
+      | The#{" "}
+      abbr(title="noob") woof#{" "}
+      | means noob.
     br
     h1 Blockquote
     .blockquote
@@ -120,7 +122,3 @@ block content
     p (Indicates uppercased text);
     h4 .pre-scrollable
     p (Makes a "pre" element scrollable)...
-
-
-
-
